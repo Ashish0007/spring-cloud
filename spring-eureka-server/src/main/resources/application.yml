@@ -1,0 +1,32 @@
+---
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+---
+spring:
+  profiles: primary
+
+
+server:
+  port: 8711
+
+---
+spring:
+  profiles: secondary
+
+
+server:
+  port: 8712
+
+---
+spring:
+  profiles: tertiary
+
+
+server:
+  port: 8713
